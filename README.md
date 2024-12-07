@@ -112,7 +112,7 @@ terraform apply
 
 4. After successful deployment, upload your React build files:
 ```bash
-aws s3 sync build/ s3://caringalfrontend/react-build/
+aws s3 sync ./build s3://caringalfrontend/react-build --delete
 ```
 
 ## Security Features
